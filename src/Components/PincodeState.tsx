@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Form from './Form';
 
 export const PincodeState = () => {
     const[state,setState]=useState();
@@ -20,22 +21,7 @@ export const PincodeState = () => {
   }
     return (
    <>
-   <label htmlFor="Pincode">Enter PinCode</label>
-   <input type="text" maxLength={6} onChange={sendPincode}/>
-   
-   <input type="text" name="" id="" value={state} />
-   
-   <select>
-     <option value="Select city">Select City</option>
-
-    {
-      city.map((t,i)=>{
-          return <option value={t} key={i}>{t}</option>
-      })
-    }
-
-   </select>
-   
+   <Form/>
    
    </>
   )
