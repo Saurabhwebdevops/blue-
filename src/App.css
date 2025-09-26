@@ -3,6 +3,18 @@
   width: 90%;
   margin: auto;
 }
+button{
+  margin:5px  auto;
+  background-color: black;
+  color: #fff;
+}
+input{
+      margin-top: 25px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+}
 ul{
   display: flex;
   list-style-type: none;
