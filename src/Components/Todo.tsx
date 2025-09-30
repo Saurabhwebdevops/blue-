@@ -1,4 +1,5 @@
 import React from 'react';
+import { Product } from './Product';
 
 type TodoItem = {
   sno: number;
@@ -28,6 +29,7 @@ export const Todo: React.FC<TodoProps> = ({ list, Delete, Add }) => {
           ))}
         </ul>
       )}
+      <Product/>
     </div>
   );
 };
